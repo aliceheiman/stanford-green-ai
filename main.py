@@ -171,7 +171,10 @@ def ImageCaption(src: str, caption: str, source_text: str|None, source_link: str
 # Here you can edit the links you want to display in the main navbar
 def NavbarSection():
     return (
-        H1("Navbar")
+        H1("Navbar"),
+        NavBar(
+            A("About", href="/")
+        )
         # NavBar(
         #     A("About", href="/about"),
         #     A("Events", href="https://lu.ma/stanfordgreenai"),
