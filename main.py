@@ -80,11 +80,11 @@ app, rt = fast_app(
 )
 
 @rt("/{fname:path}.{ext:static}")
-async def get(fname:str, ext:str): 
+async def get(fname: str, ext: str): 
     return FileResponse(f'public/{fname}.{ext}')
 
 @rt("/{dir}/{fname:path}.{ext:static}")
-async def get(dir:str, fname:str, ext:str): 
+async def get(dir: str, fname: str, ext: str): 
     return FileResponse(f'public/{dir}/{fname}.{ext}')
 
 # ----------------- COMPONENTS
