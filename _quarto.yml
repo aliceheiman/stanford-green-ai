@@ -7,7 +7,7 @@ website:
   navbar:
     title: false
     logo: "posts/assets/logo.png"
-    logo-href: "http://localhost:5001/"
+    logo-href: "https://stanfordgreenai.vercel.app"
     left:
     - text: "Blog"
       href: "posts/index.html"

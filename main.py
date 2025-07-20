@@ -39,7 +39,7 @@ span {
     font-family: "Roboto Mono", monospace !important;}
 }
 .section {
-    max-width: 800px !important;
+    max-width: 700px !important;
     margin: 0 auto;
 }
 p.lift {
@@ -55,15 +55,8 @@ p.lift {
 .divround {
     border-radius: 8px;
 }
-.uk-list-bullet > li::before {
-  display: none !important;
-  content: none !important;
-}
-.uk-list-bullet > li {
-  padding-left: 16px;
-}
-a.uk-slidenav-previous, a.uk-slidenav-next {
-    padding: 10px;
+.uk-accordion p {
+    margin-bottom: 12px;
 }
 """
 )
@@ -71,7 +64,7 @@ a.uk-slidenav-previous, a.uk-slidenav-next {
 # ----------------- WEBPAGE
 app, rt = fast_app(
     hdrs=(
-        picolink,
+        # picolink,
         Theme.green.headers(mode="light"),
         page_styles,
     ),
@@ -175,10 +168,9 @@ def NavbarSection():
             A("About", href="/about"),
             A("Events", href="https://lu.ma/stanfordgreenai"),
             A("Hackathon", href="https://lu.ma/3pkrjzk3"),
-            A("Workshops", href="https://lu.ma/stanfordgreenai?k=c&tag=workshop"),
-            A("Seminars", href="https://lu.ma/stanfordgreenai?k=c&tag=seminar"),
             A("Projects", href="/projects"),
             A("Blog", href="/blog/posts"),
+            A("Contact", href="/contact"),
             A("Join", href=general_interest_link),
             brand=A(Img(src="/assets/logo.png", width=150), href="/"),
             cls="ml-0 mr-0 mb-2",
@@ -207,6 +199,7 @@ def FooterSection():
         DivHStacked(
             A("Home", href="/"),
             A("About", href="/about"),
+            A("Contact", href="/contact"),
             A("Join", href="https://forms.gle/P9Gr877opgAxsftJ7"),
             A("Blog", href="/blog/posts"),
             A("Projects", href="/projects"),
@@ -362,7 +355,8 @@ def Projects():
         "PROJECTS",
         "Discover and Participate in Green AI Projects at Stanford",
         None,
-        Slider(*featured_projects)
+        Slider(*featured_projects),
+        P("Have a project idea? ", A("Contact us.", href="/contact"))
     )
 
 def CTA(text, link_text, link_href, cls=""):
@@ -397,12 +391,34 @@ def Resources():
         RegisterSignup()
     )
 
+def FAQ():
+    return Section(
+        "FAQ",
+        "Frequently Asked Questions",
+        "var(--gray-color)",
+        Accordion(
+            
+            AccordionItem(
+                "What is Green AI?",
+                P('According to ', A("(Bolón-Canedo et al., 2024)", href="https://www-sciencedirect-com.stanford.idm.oclc.org/science/article/pii/S0925231224008671", target="_blank"),' Green AI is an "AI paradigm which incorporates sustainable practices and techniques in model design, training, and deployment that aim to reduce the associated environmental cost and carbon footprint."'),
+                P("For more information, check out our ", A("Resources", "/resources"), "."),
+            ),
+            AccordionItem(
+                "How do I join Stanford Green AI?",
+                P("For general members, please ", A("register your interest here", href=general_interest_link), " and we will be in touch with the latest events and opportunities!"),
+                P("If you are interested in joining the core team, please ", A("register your interest here", href=team_interest_link), ".")
+            ),
+            multiple=False,
+            animation=True,
+        ),
+    ),
+
 def Contact():
     return Section(
         "CONTACT",
         "Sounds Interesting? We would love to collaborate!",
         None,
-        LinkButton("Contact Us", "/about", targetblank=False)
+        LinkButton("Contact Us", "/contact", targetblank=False)
     )
 
 # ----------------- PAGES
@@ -419,6 +435,7 @@ def get():
         CurrentInitiatives(),
         Projects(),
         Resources(),
+        FAQ(),
         Contact(),
         FooterSection()
     )
@@ -496,6 +513,27 @@ def get():
     return Container(
         NavbarSection(),
         AboutUs(),
+        Team(),
+        FooterSection()
+    )
+
+# --------- CONTACT PAGE
+
+def ContactBox():
+    md = """For ideas, sponsorship opportunities or general inquiries, contact `aheiman@stanford.edu`."""
+
+    return Section(
+        "CONTACT",
+        "We would love to hear from you",
+        None,
+        render_md(md)
+    )
+
+@rt("/contact")
+def get():
+    return Container(
+        NavbarSection(),
+        ContactBox(),
         Team(),
         FooterSection()
     )
