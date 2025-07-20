@@ -180,7 +180,7 @@ def NavbarSection():
             A("Projects", href="/projects"),
             A("Blog", href="/blog/posts"),
             A("Join", href=general_interest_link),
-            brand=A(Img(src="/assets/logo.png", width=150), href="/"),
+            # brand=A(Img(src="/assets/logo.png", width=150), href="/"),
             cls="ml-0 mr-0 mb-2",
         ),
     )
