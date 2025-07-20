@@ -79,13 +79,13 @@ app, rt = fast_app(
     live=True,
 )
 
-@rt("/{fname:path}.{ext:static}")
-async def get(fname: str, ext: str): 
-    return FileResponse(f'public/{fname}.{ext}')
+# @rt("/{fname:path}.{ext:static}")
+# async def get(fname: str, ext: str): 
+#     return FileResponse(f'public/{fname}.{ext}')
 
-@rt("/{dir}/{fname:path}.{ext:static}")
-async def get(dir: str, fname: str, ext: str): 
-    return FileResponse(f'public/{dir}/{fname}.{ext}')
+# @rt("/{dir}/{fname:path}.{ext:static}")
+# async def get(dir: str, fname: str, ext: str): 
+#     return FileResponse(f'public/{dir}/{fname}.{ext}')
 
 # ----------------- COMPONENTS
 # Below are components (parts of a page) written with HTMX.
