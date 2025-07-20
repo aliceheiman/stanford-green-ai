@@ -410,23 +410,17 @@ def Contact():
 # that display when you type / or /routes in the url bar.
 
 # --------- HOME PAGE
-# @rt("/")
-# def get():
-#     return Container(
-#         NavbarSection(),
-#         HeroSection(),
-#         OurMission(),
-#         CurrentInitiatives(),
-#         Projects(),
-#         Resources(),
-#         Contact(),
-#         FooterSection()
-#     )
-
 @rt("/")
 def get():
     return Container(
-        H1("Welcome to Stanford Green AI!")
+        NavbarSection(),
+        # HeroSection(),
+        # OurMission(),
+        # CurrentInitiatives(),
+        # Projects(),
+        # Resources(),
+        # Contact(),
+        # FooterSection()
     )
 
 # --------- ABOUT PAGE
