@@ -414,13 +414,13 @@ def Contact():
 def get():
     return Container(
         NavbarSection(),
-        # HeroSection(),
-        # OurMission(),
-        # CurrentInitiatives(),
-        # Projects(),
-        # Resources(),
-        # Contact(),
-        # FooterSection()
+        HeroSection(),
+        OurMission(),
+        CurrentInitiatives(),
+        Projects(),
+        Resources(),
+        Contact(),
+        FooterSection()
     )
 
 # --------- ABOUT PAGE
