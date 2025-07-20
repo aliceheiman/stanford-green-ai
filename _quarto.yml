@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: public/blog
+
+website:
+  title: "Stanford Green AI Blog"
+  navbar:
+    title: false
+    logo: "posts/assets/logo.png"
+    logo-href: "http://localhost:5001/"
+    left:
+    - text: "Blog"
+      href: "posts/index.html"
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    font:
+        text: Inter
+        heading: Inter
+

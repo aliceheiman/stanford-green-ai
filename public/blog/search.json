@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "Stanford Green AI Blog",
+    "section": "",
+    "text": "Check out our latest resources, event writeups, and more!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nResources\n\n\nA curated list of favorite resources and tools in the space of Green AI.\n\n\n\n\n\nJul 20, 2025\n\n\nStanford Green AI Team\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/resources.html",
+    "href": "posts/resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Photo by Jeremy Cai on Unsplash\nHere is a live collection of our favorite resources."
+  },
+  {
+    "objectID": "posts/resources.html#start-here",
+    "href": "posts/resources.html#start-here",
+    "title": "Resources",
+    "section": "Start Here",
+    "text": "Start Here"
+  },
+  {
+    "objectID": "posts/resources.html#general-green-ai",
+    "href": "posts/resources.html#general-green-ai",
+    "title": "Resources",
+    "section": "General Green AI",
+    "text": "General Green AI"
+  },
+  {
+    "objectID": "posts/resources.html#green-in-ai",
+    "href": "posts/resources.html#green-in-ai",
+    "title": "Resources",
+    "section": "Green-in AI",
+    "text": "Green-in AI\n\n\n\n\n\n\nDefinition\n\n\n\n“Algorithms that are green by design, i.e., energy efficient in both training and use.”\n\nBolón-Canedo et al. (2024)"
+  },
+  {
+    "objectID": "posts/resources.html#green-by-ai",
+    "href": "posts/resources.html#green-by-ai",
+    "title": "Resources",
+    "section": "Green-by AI",
+    "text": "Green-by AI\n\n\n\n\n\n\nDefinition\n\n\n\n“Algorithms specifically trained and used to tackle environmental challenges.”\n\nBolón-Canedo et al. (2024)"
+  },
+  {
+    "objectID": "posts/resources.html#references",
+    "href": "posts/resources.html#references",
+    "title": "Resources",
+    "section": "References",
+    "text": "References\n\n\nBolón-Canedo, Verónica, Laura Morán-Fernández, Brais Cancela, and Amparo Alonso-Betanzos. 2024. “A Review of Green Artificial Intelligence: Towards a More Sustainable Future.” Neurocomputing 599 (September): 128096. https://doi.org/10.1016/j.neucom.2024.128096."
+  }
+]

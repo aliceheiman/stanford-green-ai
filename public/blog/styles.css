@@ -1,0 +1,30 @@
+/* css styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&family=Merriweather&display=swap');
+
+:root {
+    --primary-color: #397B5B;
+    --light-color: #72EFAC;
+    --gray-color: #F4F4F4;
+    --secondary-color: #000138;
+    --background-color: #1F0322;
+}
+
+/* Use Roboto Mono for tags, code, and links */
+
+
+/* a:not(.anchorjs-link), .listing-categories, .quarto-title-meta { */
+.listing-categories, .quarto-title-meta {
+    font-family: 'Roboto Mono', monospace !important;
+    color: var(--primary-color);
+}
+a {
+    color: var(--primary-color);
+}
+
+/* Ensure body and headings use Inter */
+body, p, h1, h2, h3, h4, h5, h6, .listing-title, .listing-description {
+    font-family: 'Inter', sans-serif !important;
+}
+.listing-title a, .listing-description a {
+    font-family: 'Inter', sans-serif !important;
+}
