@@ -171,18 +171,19 @@ def ImageCaption(src: str, caption: str, source_text: str|None, source_link: str
 # Here you can edit the links you want to display in the main navbar
 def NavbarSection():
     return (
-        NavBar(
-            A("About", href="/about"),
-            A("Events", href="https://lu.ma/stanfordgreenai"),
-            A("Hackathon", href="https://lu.ma/3pkrjzk3"),
-            A("Workshops", href="https://lu.ma/stanfordgreenai?k=c&tag=workshop"),
-            A("Seminars", href="https://lu.ma/stanfordgreenai?k=c&tag=seminar"),
-            A("Projects", href="/projects"),
-            A("Blog", href="/blog/posts"),
-            A("Join", href=general_interest_link),
-            # brand=A(Img(src="/assets/logo.png", width=150), href="/"),
-            cls="ml-0 mr-0 mb-2",
-        ),
+        H1("Navbar")
+        # NavBar(
+        #     A("About", href="/about"),
+        #     A("Events", href="https://lu.ma/stanfordgreenai"),
+        #     A("Hackathon", href="https://lu.ma/3pkrjzk3"),
+        #     A("Workshops", href="https://lu.ma/stanfordgreenai?k=c&tag=workshop"),
+        #     A("Seminars", href="https://lu.ma/stanfordgreenai?k=c&tag=seminar"),
+        #     A("Projects", href="/projects"),
+        #     A("Blog", href="/blog/posts"),
+        #     A("Join", href=general_interest_link),
+        #     brand=A(Img(src="/assets/logo.png", width=150), href="/"),
+        #     cls="ml-0 mr-0 mb-2",
+        # ),
     )
 
 # --------- FOOTER
