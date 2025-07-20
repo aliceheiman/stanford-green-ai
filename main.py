@@ -423,7 +423,7 @@ def Contact():
 #         FooterSection()
 #     )
 
-# @rt("/")
+@rt("/")
 def get():
     return Container(
         H1("Welcome to Stanford Green AI!")
