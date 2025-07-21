@@ -26,7 +26,7 @@ page_styles = Style(
 }
 body {
   max-width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 p a {
     color: var(--primary-color) !important;
