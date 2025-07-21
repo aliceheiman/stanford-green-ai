@@ -64,7 +64,6 @@ p.lift {
 # ----------------- WEBPAGE
 app, rt = fast_app(
     hdrs=(
-        # picolink,
         Theme.green.headers(mode="light"),
         page_styles,
     ),
