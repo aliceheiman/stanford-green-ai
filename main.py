@@ -286,7 +286,7 @@ def OurMission():
 
 We draw from two complementary pillars:
 
-* **Green-in AI**: Designing and deploying AI systems that are energy efficient in both training use.
+* **Green-in AI**: Designing and deploying AI systems that are energy efficient in both training and use.
 
 * **Green-by AI**: Leveraging AI to tackle environmental challenges and accelerate progress towards sustainable development.
 
