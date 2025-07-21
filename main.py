@@ -345,7 +345,7 @@ def Projects():
         )
 
     featured_projects = [
-        Project("The Stanford Green AI Explorer", "Explore and track the GreenAI at Stanford University through our interactive dashboard.", "/assets/green-dots.png", "/"),
+        Project("The Stanford Green AI Explorer", "Explore and track GreenAI work at Stanford University through our interactive dashboard.", "/assets/green-dots.png", "/projects"),
     ]
 
     return Section(
@@ -394,11 +394,10 @@ def FAQ():
         "Frequently Asked Questions",
         "var(--gray-color)",
         Accordion(
-            
             AccordionItem(
                 "What is Green AI?",
                 P('According to ', A("(Bolón-Canedo et al., 2024)", href="https://www-sciencedirect-com.stanford.idm.oclc.org/science/article/pii/S0925231224008671", target="_blank"),' Green AI is an "AI paradigm which incorporates sustainable practices and techniques in model design, training, and deployment that aim to reduce the associated environmental cost and carbon footprint."'),
-                P("For more information, check out our ", A("Resources", "/resources"), "."),
+                P("For more information, check out our ", A("Resources", href="/resources"), "."),
             ),
             AccordionItem(
                 "How do I join Stanford Green AI?",
