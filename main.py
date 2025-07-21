@@ -24,6 +24,10 @@ page_styles = Style(
     --secondary-color: #000138;
     --background-color: #1F0322;
 }
+body {
+  max-width: 100vw;
+  overflow: hidden;
+}
 p a {
     color: var(--primary-color) !important;
 }
@@ -196,16 +200,10 @@ def FooterSection():
             SocialIcon("linkedin", "/"),
         ),
         DivHStacked(
-            A("Home", href="/"),
-            A("About", href="/about"),
             A("Contact", href="/contact"),
-            A("Join", href="https://forms.gle/P9Gr877opgAxsftJ7"),
             A("Blog", href="/blog/posts"),
             A("Projects", href="/projects"),
             A("Events", href="https://lu.ma/stanfordgreenai"),
-            A("Workshops", href="https://lu.ma/stanfordgreenai?k=c&tag=workshop"),
-            A("Seminars", href="https://lu.ma/stanfordgreenai?k=c&tag=seminar"),
-            A("Resources", href="/resources"),
         ),
         Iframe(src="https://docs.google.com/forms/d/e/1FAIpQLSecLXLmDEJz7_HYF6sgjlZURLkEypPEeORhZFYrj_Z0h69Msw/viewform?embedded=true", width="100%", height="300", frameborder="0", marginheight="0", marginwidth="0"),
         DivCentered(P(f"{current_year} © Stanford Green AI"), cls="mt-6"),
